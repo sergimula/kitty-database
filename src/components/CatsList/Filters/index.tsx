@@ -9,7 +9,7 @@ import {
   TextField,
 } from '@material-ui/core'
 
-import { Cat, CatRace } from '../../../constants'
+import { Cat, CatRace } from 'src/constants'
 import styles from './styles'
 
 const useStyles = makeStyles(styles)

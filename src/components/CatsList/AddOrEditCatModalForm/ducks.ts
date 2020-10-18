@@ -1,6 +1,6 @@
 import { nth, toInteger } from 'lodash'
 
-import { Cat, PLACE_KITTEN_BASE_URL } from '../../../constants'
+import { Cat, PLACE_KITTEN_BASE_URL } from 'src/constants'
 
 export const EDIT_CAT: string = 'EDIT_CAT'
 export const RESET_FORM: string = 'RESET_FORM'

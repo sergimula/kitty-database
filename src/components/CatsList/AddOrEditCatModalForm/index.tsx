@@ -12,7 +12,7 @@ import {
   TextField,
 } from '@material-ui/core'
 
-import { Cat, CatRace, PLACE_KITTEN_BASE_URL } from '../../../constants'
+import { Cat, CatRace, PLACE_KITTEN_BASE_URL } from 'src/constants'
 import * as ducks from './ducks'
 import styles from './styles'
 
@@ -169,6 +169,7 @@ const AddCatModalForm = (props: Props) => {
                     id: 'add-cat-race-selector',
                   }}
                   label='Race'
+                  name='race_id'
                   native
                   onChange={(event) =>
                     dispatch({

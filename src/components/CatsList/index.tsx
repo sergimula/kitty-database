@@ -19,7 +19,7 @@ import EditIcon from '@material-ui/icons/Edit'
 import InfoIcon from '@material-ui/icons/Info'
 import PetsIcon from '@material-ui/icons/Pets'
 
-import { Cat, CatRace, PLACE_KITTEN_BASE_URL } from '../../constants'
+import { Cat, CatRace, PLACE_KITTEN_BASE_URL } from 'src/constants'
 import Filters from './Filters'
 import AddOrEditCatModalForm from './AddOrEditCatModalForm'
 import styles from './styles'
@@ -92,8 +92,8 @@ const CatsList = (props: Props) => {
                     <ListItemText primary={cat.name} />
                     <ListItemSecondaryAction>
                       <IconButton
+                        aria-label='info'
                         edge='end'
-                        aria-label='delete'
                         onClick={() => {
                           setShowCat(cat)
                         }}
@@ -101,8 +101,8 @@ const CatsList = (props: Props) => {
                         <InfoIcon />
                       </IconButton>
                       <IconButton
+                        aria-label='edit'
                         edge='end'
-                        aria-label='delete'
                         onClick={() => {
                           setCatToEdit(cat)
                           setIsEditCatModalFormOpen(true)
@@ -111,8 +111,8 @@ const CatsList = (props: Props) => {
                         <EditIcon />
                       </IconButton>
                       <IconButton
-                        edge='end'
                         aria-label='delete'
+                        edge='end'
                         onClick={() => props.removeCat(cat)}
                       >
                         <DeleteIcon />
