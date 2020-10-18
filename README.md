@@ -29,6 +29,10 @@ This mode is created in order to work locally with the json-server
 Launches the jest test runner <br />
 See the section about [running tests](https://jestjs.io/docs/en/getting-started.html) for more information.
 
+### `npm test -- -u`
+
+Update test snapshots
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br />
