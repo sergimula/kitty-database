@@ -1,8 +1,9 @@
 {
-  "name": "ts-seat-code-technical-challenge",
+  "name": "seat-code-technical-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-typescript": "^7.12.1",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -14,6 +15,8 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "axios": "^0.20.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "lodash": "^4.17.20",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -24,8 +27,19 @@
   "scripts": {
     "start": "PORT=8000 react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.(spec).(tsx)"
+    ],
+    "setupFiles": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "src/(.*)$": "<rootDir>/src/$1"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
     "jest": "^24.9.0",
     "prettier": "2.1.2",
     "react-test-renderer": "^16.14.0",
