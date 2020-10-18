@@ -10,9 +10,9 @@ In the project directory, you can run:
 
 Start the local json-server API
 
-Open [http://localhost:3000](http://localhost:3000/db) to view full cat db.
-Open [http://localhost:3000](http://localhost:3000/cats) to view all cats.
-Open [http://localhost:3000](http://localhost:3000/races) to view all cats races.
+* Open [http://localhost:3000](http://localhost:3000/db) to view full cat db.
+* Open [http://localhost:3000](http://localhost:3000/cats) to view all cats.
+* Open [http://localhost:3000](http://localhost:3000/races) to view all cats races.
 
 ### `npm start`
 
@@ -51,4 +51,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Built with
+
+* [React](reactjs.org) - A JavaScript library for building user interfaces
+* [Material-UI](https://material-ui.com/) - React components for faster and easier web development.
+* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+* [json-server](https://github.com/typicode/json-server) - Get a full fake REST API with zero coding in less than 30 seconds (seriously)
