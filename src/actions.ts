@@ -57,7 +57,7 @@ export const addCatToDB = async (
     console.log('Created cat succefully', res.data)
 
     if (dispatch) {
-      process.env.NODE_ENV !== 'production'
+      process.env.NODE_ENV === 'production'
         ? dispatch({ type: ADD_CAT_TO_DB, data: res.data })
         : getCatsList(dispatch)
     }
@@ -74,7 +74,7 @@ export const editCatFromDB = async (
     const res = await axios.put(`${API_URL}/cats/${catToEdit.id}`, catToEdit)
     console.log('Edited cat succefully', res.status)
 
-    if (dispatch && process.env.NODE_ENV !== 'production') {
+    if (dispatch && process.env.NODE_ENV === 'production') {
       getCatsList(dispatch)
     }
   } catch (error) {
@@ -91,7 +91,7 @@ export const removeCatFromDB = async (
     console.log('Removed cat succefully', res.status)
 
     if (dispatch) {
-      process.env.NODE_ENV !== 'production'
+      process.env.NODE_ENV === 'production'
         ? dispatch({ type: REMOVE_CAT_FROM_DB, data: catToRemove })
         : getCatsList(dispatch)
     }
